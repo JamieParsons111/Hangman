@@ -5,10 +5,11 @@ using System.Text;
 using System.ComponentModel.Design;
 using Microsoft.Data.Sqlite;
 using static System.Formats.Asn1.AsnWriter;
+//using HangmanApp;
 
-namespace HangmanAppTest
+class Program
 {
-    internal class Program
+    internal class Hangman
     {
         // Prints out the hangman as the player gets the guesses wrong
         private static void printHangman(int wrong)
@@ -138,7 +139,7 @@ namespace HangmanAppTest
 
 
  
-
+        
 
         static void Main(string[] args)
         {
@@ -222,7 +223,7 @@ namespace HangmanAppTest
             {
              
                     Console.WriteLine("Congratulations! You've guessed the word correctly and won the game");
-                victoryScreen()
+                victoryScreen();
             }
             else
             {
